@@ -48,8 +48,8 @@ elif file_style == 'xlsx':
 
     else:  # 获取到文件的话
         st.subheader("Data preview")
-        uploaded_file1 = readCsvData(uploaded_file1)
-        uploaded_file2 = readCsvData(uploaded_file2)
+        uploaded_file1 = readExcelData(uploaded_file1)
+        uploaded_file2 = readExcelData(uploaded_file2)
         stat, p = stats.f_oneway(uploaded_file1, uploaded_file2)
 
         st.subheader("Results for ANOVA test")
